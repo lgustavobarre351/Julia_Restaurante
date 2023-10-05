@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:wght@300&display=swap');
+
+:root{ 
+    --cor-primaria--: #000000;
+    --cor-secundaria--: #ffffff;
+    --font-primaria--: 'Italianno', cursive;
+    --font-secundaria--: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------------------------HEADER----------------------------------*/
+
+.header{
+    width: 100%;
+    background-color: var(--cor-primaria--) ;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 6%;
+}
+
+.titulo_header{
+    color: var(--cor-secundaria--);
+    font-size: 40px;
+    font-family: var(--font-primaria--);
+}
+
+.opcao_header{
+    color: var(--cor-secundaria--);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--font-secundaria--);
+}
+
+.opcao_header:hover{
+    color: gold;
+}
+
+.img_header{
+    width: 4%;
+    height: 4%; ;
+}
+
+/*----------------------------------BODTY----------------------------------*/
+
+body{
+    background-image: url(../assets/madeira_preta\ .png);
+   
+}
+
+.principal{
+    width: auto;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    padding: 8rem;
+    gap: 120px;
+    margin-top: 2%;
+}
+
+.conteudo_texto_principal{
+    flex-direction: column; 
+    display: flex;
+    margin-left: 9rem;
+    gap: 50px;
+}
+
+.titulo_principal{  
+    color: var(--cor-secundaria--);
+    font-size: 3rem;
+    font-family: var(--font-primaria--);
+}
+
+.texto_principal{
+    color: var(--cor-secundaria--);
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria--);
+}
+
+.botao_principal{
+    color: var(--cor-secundaria--);
+    border-radius: 7px;
+    background-color: rgb(148, 25, 21);
+    text-decoration: none;
+    font-family: var(--font-secundaria--);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 3rem;
+}
+
+.botao_principal:hover{
+    background-color: rgb(112, 16, 13);
+    color: gold;
+}
+
+
+.imagens{
+    display: flex; 
+    box-shadow: 0.5px 1px 150px 1px var(--cor-secundaria--);
+    border-radius: 50px;
+}
+
+.img_principal{
+    width: 500px;
+    height: 400px;      
+}
+
+/*----------------------------------FOOTER----------------------------------*/
+
+footer{
+    margin-bottom: 0px;
+    background-color: var(--cor-primaria--);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 37%;
+    
+}
+
+@media (max-width: 1920px) {
+
+
+    .header{
+        width: 1920px;
+    }
+
+    footer{
+        width: 1920px;
+    }
+}

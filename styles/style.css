@@ -22,7 +22,7 @@
     padding: 1rem;
     display: flex;
     align-items: center;
-    gap: 38%;
+    gap: 40%;
 }
 
 .titulo_header{
@@ -51,15 +51,11 @@
 
 body{
     background-image: url(../assets/madeira_preta\ .png);
-
 }
 
-
-
 .principal{
-    height: 650px;
+    height: 100vh;
     display: flex;
-    align-items: center;
     padding: 8rem;
     gap: 120px;
     margin-top: 2%;
@@ -68,13 +64,128 @@ body{
 .conteudo_texto_principal{
     flex-direction: column; 
     display: flex;
-    margin-left: 9rem;
+    margin-left: 8rem;
     gap: 50px;
 }
 
 .titulo_principal{  
     color: var(--cor-secundaria--);
     font-size: 3rem;
+    font-family: var(--font-primaria--);
+}
+
+.texto_principal{
+    color: var(--cor-secundaria--);
+    font-size: 1.5rem;
+    font-family: var(--font-secundaria--);
+}
+
+.botao_principal{
+    color: var(--cor-secundaria--);
+    border-radius: 7px;
+    background-color: rgb(148, 25, 21);
+    text-decoration: none;
+    font-family: var(--font-secundaria--);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 3rem;
+}
+
+.botao_principal:hover{
+    background-color: rgb(112, 16, 13);
+    color: gold;
+}
+
+
+.imagens{
+    display: flex;  
+    border-radius: 5px;
+    height: 400px;
+}
+
+.img_principal{
+    border-radius: 70px;
+    box-shadow: 0.5px 1px 150px 1px var(--cor-secundaria--);
+    width: 500px;
+    height: 400px;      
+}
+
+/*----------------------------------FOOTER----------------------------------*/
+
+footer{
+
+    background-color: var(--cor-primaria--);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 30%; 
+}
+
+@media (max-width: 600px){
+
+    .header{
+        background-color: var(--cor-primaria--) ;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 30%;
+    }
+    
+
+    .titulo_header{
+        color: var(--cor-secundaria--);
+        font-size: 20px;
+        font-family: var(--font-primaria--);
+    }
+    
+    .opcao_header{
+        color: var(--cor-secundaria--);
+        text-decoration: none;
+        font-size: 20px;
+        font-family: var(--font-secundaria--);
+    }
+    
+    .opcao_header:hover{
+        color: gold;
+    }
+    
+    .img_header{
+        width: 4%;
+        height: 4%; ;
+}
+
+/*----------------------------------BODTY----------------------------------*/
+
+
+body{
+    background-image: url(../assets/madeira_preta\ .png);
+    
+}
+
+
+.principal{
+    height: 650px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem;
+    gap: 120px;
+    margin-top: 2%;
+}
+
+.conteudo_texto_principal{
+    flex-direction: column; 
+    align-items: center;
+    display: flex;
+    margin-left: 2rem;
+    gap: 50px;
+}
+
+.titulo_principal{  
+    color: var(--cor-secundaria--);
+    font-size: 2rem;
     font-family: var(--font-primaria--);
 }
 
@@ -114,17 +225,5 @@ body{
     height: 400px;      
 }
 
-/*----------------------------------FOOTER----------------------------------*/
 
-footer{
-    margin-bottom: 0px;
-    background-color: var(--cor-primaria--);
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    gap: 37%;
-    
 }
-
-
-
